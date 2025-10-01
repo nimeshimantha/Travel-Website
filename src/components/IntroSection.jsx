@@ -1,18 +1,47 @@
+import { useRef } from 'react'
+
 export default function IntroSection() {
-  const images = [
-    'https://images.unsplash.com/photo-1591549761827-8ea7f6f389e7?q=80&w=1200&auto=format&fit=crop',
-    'https://images.unsplash.com/photo-1558981806-ec527fa84c39?q=80&w=1200&auto=format&fit=crop',
-    'https://images.unsplash.com/photo-1526779259212-939e64788e3c?q=80&w=1200&auto=format&fit=crop',
-    'https://images.unsplash.com/photo-1529356466277-5a9a8fcf1fda?q=80&w=1200&auto=format&fit=crop',
-    'https://images.unsplash.com/photo-1495567720989-cebdbdd97913?q=80&w=1200&auto=format&fit=crop',
+  const scrollerRef = useRef(null)
+  const scrollBy = (delta) => scrollerRef.current?.scrollBy({ left: delta, behavior: 'smooth' })
+  const journeys = [
+    { title: 'Join a', subtitle: 'Group', img: 'https://images.unsplash.com/photo-1520201163981-8cc95007dd2a?q=80&w=800&auto=format&fit=crop' },
+    { title: 'Sri Lanka', subtitle: 'with private', img: 'https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?q=80&w=800&auto=format&fit=crop' },
+    { title: 'Authentic', subtitle: 'Ceylon', img: 'https://images.unsplash.com/photo-1524499982521-1ffd58dd89ea?q=80&w=800&auto=format&fit=crop' },
+    { title: 'Adventurous', subtitle: 'Spirit', img: 'https://images.unsplash.com/photo-1518655048521-f130df041f66?q=80&w=800&auto=format&fit=crop' },
+    { title: 'Barefoot', subtitle: 'Luxury', img: 'https://images.unsplash.com/photo-1559339352-11d035aa65de?q=80&w=800&auto=format&fit=crop' },
   ]
   return (
     <section className="container py-16">
-      {/* Image strip */}
-      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4">
-        {images.map((src, i) => (
-          <img key={i} src={src} alt="Sri Lanka" className="h-44 w-full object-cover rounded" />
-        ))}
+      {/* Journeys header */}
+      <p className="text-center text-sm text-pink-600">• The paths are many — you choose.</p>
+      <h2 className="mt-2 text-center text-4xl md:text-5xl font-serif font-semibold">What’s your journey?</h2>
+      <p className="text-center text-2xl font-serif">Your adventure. Your way.</p>
+
+      {/* Horizontal circular cards with arrows */}
+      <div className="relative mt-8">
+        <button aria-label="scroll left" onClick={() => scrollBy(-350)} className="absolute left-0 top-1/2 -translate-y-1/2 z-10 hidden md:grid h-12 w-12 place-items-center rounded-full border border-olive-300 bg-white/80 shadow hover:bg-white">
+          ←
+        </button>
+        <div ref={scrollerRef} className="flex gap-12 overflow-x-auto px-12 md:px-20 scroll-smooth">
+          {journeys.map((j, idx) => (
+            <div key={idx} className="shrink-0 text-center">
+              <div className="relative inline-grid place-items-center">
+                <img src={j.img} alt="" className="h-40 w-40 rounded-full object-cover" />
+                <span className={`absolute inset-0 rounded-full border-2 ${idx === 2 ? 'border-pink-400' : 'border-lime-700'} border-dashed`} />
+                <span className="absolute -bottom-4 left-1/2 -translate-x-1/2 h-10 w-10 rounded-full border-4 border-white bg-white/90 grid place-items-center">
+                  <span className="h-6 w-6 rounded-full bg-slate-200" />
+                </span>
+              </div>
+              <div className="mt-6">
+                <div className="font-semibold">{j.title}</div>
+                <div className="text-xs uppercase tracking-wide text-slate-500">{j.subtitle}</div>
+              </div>
+            </div>
+          ))}
+        </div>
+        <button aria-label="scroll right" onClick={() => scrollBy(350)} className="absolute right-0 top-1/2 -translate-y-1/2 z-10 hidden md:grid h-12 w-12 place-items-center rounded-full border border-olive-300 bg-white/80 shadow hover:bg-white">
+          →
+        </button>
       </div>
 
       {/* Content */}

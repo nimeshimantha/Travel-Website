@@ -1,5 +1,6 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Navbar from './components/Navbar'
+import Footer from './components/Footer'
 import Home from './pages/Home'
 import Destinations from './pages/Destinations'
 import Experiences from './pages/Experiences'
@@ -19,9 +20,7 @@ export default function App() {
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </div>
-      <footer className="mt-24 border-t border-black/10 py-8 text-center text-sm text-muted-foreground">
-        © {new Date().getFullYear()} Travel Haven — demo site
-      </footer>
+      <Footer />
     </BrowserRouter>
   )
 }

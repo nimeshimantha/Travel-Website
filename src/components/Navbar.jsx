@@ -17,7 +17,7 @@ export default function Navbar() {
       <nav className="container flex items-center justify-between py-4">
         <Link to="/" className="flex items-center gap-2 font-semibold tracking-wide">
           <span className="inline-block h-8 w-8 rounded bg-emerald-500"></span>
-          <span>Jetwing Travels</span>
+          <span>Sri Lanka Travels</span>
         </Link>
 
         <button
