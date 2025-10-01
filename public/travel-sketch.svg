@@ -1,0 +1,15 @@
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 360' fill='none' stroke='#6b7280' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'>
+  <path d='M40 320h560'/>
+  <g opacity='0.85'>
+    <path d='M120 290c-10-50 20-80 70-90h140c40 10 60 30 60 80v10H120z'/>
+    <circle cx='210' cy='300' r='28'/>
+    <circle cx='370' cy='300' r='28'/>
+    <path d='M200 300h20M360 300h20'/>
+    <rect x='210' y='220' width='140' height='50' rx='8'/>
+    <circle cx='240' cy='245' r='10'/>
+    <path d='M310 220v50M180 250h-20m-20 0h-10'/>
+    <path d='M270 130c40 0 100 10 100 30s-40 40-100 40-100-20-100-40 60-30 100-30z' opacity='0.5'/>
+    <path d='M240 80c10 10 20 30 20 40M220 90c10 10 10 30 10 40'/>
+    <path d='M450 80c20 10 40 10 60 0M470 100c10 10 30 10 40 0'/>
+  </g>
+</svg>
