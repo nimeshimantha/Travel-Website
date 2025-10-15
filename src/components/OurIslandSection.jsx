@@ -1,13 +1,13 @@
 const leftCategories = [
-  { title: 'Popular Beaches', img: 'https://images.unsplash.com/photo-1470219556762-1771e7f9427d?q=80&w=500&auto=format&fit=crop' },
-  { title: 'Wildlife & Nature', img: 'https://images.unsplash.com/photo-1546182990-dffeafbe841d?q=80&w=500&auto=format&fit=crop' },
-  { title: 'Adventure', img: 'https://images.unsplash.com/photo-1519681393784-d120267933ba?q=80&w=500&auto=format&fit=crop' },
+  { title: 'Popular Beaches', img: 'src/assets/ourland/beaches.jpg' },
+  { title: 'Wildlife & Nature', img: 'src/assets/ourland/wildlife.jpg' },
+  { title: 'Adventure', img: 'src/assets/ourland/adventuresl.jpg' },
 ]
 
 const rightCategories = [
-  { title: 'History & Culture', img: 'https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?q=80&w=500&auto=format&fit=crop' },
-  { title: 'Lesser Travelled', img: 'https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=500&auto=format&fit=crop' },
-  { title: 'Gastronomy', img: 'https://images.unsplash.com/photo-1526318472351-c75fcf070305?q=80&w=500&auto=format&fit=crop' },
+  { title: 'History & Culture', img: 'src/assets/ourland/history.jpg' },
+  { title: 'Lesser Travelled', img: 'src/assets/ourland/sigirya.jpg' },
+  { title: 'Gastronomy', img: 'src/assets/ourland/sl-food.webp' },
 ]
 
 function Chip({ img, title, align = 'left' }) {
@@ -22,6 +22,8 @@ function Chip({ img, title, align = 'left' }) {
   )
 }
 
+import mapImg from '../assets/large-detailed-tourist-map-of-sri-lanka.jpg'
+
 export default function OurIslandSection() {
   return (
     <section className="container py-20">
@@ -31,7 +33,7 @@ export default function OurIslandSection() {
       <h2 className="mt-2 text-center text-4xl md:text-5xl font-serif font-semibold">Our Island</h2>
       <p className="text-center text-2xl font-serif">Sri Lanka</p>
       <p className="mt-4 text-center font-semibold text-olive-700">
-        <a href="#" className="text-emerald-700">View All Experiences ▸</a>
+        <a href="#" className="text-sky-700">View All Experiences ▸</a>
       </p>
 
       <div className="mt-10 grid gap-8 lg:grid-cols-3 lg:items-center">
@@ -44,7 +46,7 @@ export default function OurIslandSection() {
 
         {/* Center map image */}
         <div className="flex justify-center">
-          <img src="https://images.unsplash.com/photo-1549880338-65ddcdfd017b?q=80&w=800&auto=format&fit=crop" alt="Sri Lanka map stylized" className="max-w-md w-full" />
+          <img src={mapImg} alt="Sri Lanka map detailed" className="max-w-md w-full rounded" />
         </div>
 
         {/* Right column chips (mirrored) */}

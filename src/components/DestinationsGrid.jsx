@@ -1,55 +1,55 @@
 const items = [
   {
     title: 'Anuradhapura',
-    img: 'https://images.unsplash.com/photo-1580130663888-82d356f4f39b?q=80&w=1600&auto=format&fit=crop',
+    img: 'src/assets/destination/Anuradhapura.jpg',
     excerpt:
       'The epicentre of Sinhalese civilization dating back to 4th century BC, Anuradhapura...',
   },
   {
     title: 'Arugam Bay',
-    img: 'https://images.unsplash.com/photo-1519567241046-7f570eee3ad2?q=80&w=1600&auto=format&fit=crop',
+    img: 'src/assets/destination/Arugam Bay.jpeg',
     excerpt:
       "Unspoilt beaches and magnificent waves: it's the ultimate ‘hangout’ for surfers and...",
   },
   {
     title: 'Bentota',
-    img: 'https://images.unsplash.com/photo-1524492412937-b28074a5d7da?q=80&w=1600&auto=format&fit=crop',
+    img: 'src/assets/destination/Bentota.webp',
     excerpt:
       'With a mix of beautiful beaches, watersports and buzzing streets that attract...',
   },
   {
     title: 'Colombo',
-    img: 'https://images.unsplash.com/photo-1593085512475-1b4a5bc9c1c6?q=80&w=1600&auto=format&fit=crop',
+    img: 'src/assets/destination/Colombo.jpg',
     excerpt:
       'A hotspot full of diverse attractions from upscale shopping malls to busy...',
   },
   {
     title: 'Dambulla',
-    img: 'https://images.unsplash.com/photo-1604908554001-4e38cf143e90?q=80&w=1600&auto=format&fit=crop',
+    img: 'src/assets/destination/Dambulla.jpg',
     excerpt:
       'One of the main tourist attractions in Dambulla is the sacred cave...',
   },
   {
     title: 'Ella',
-    img: 'https://images.unsplash.com/photo-1584984734618-040a6f2b575a?q=80&w=1600&auto=format&fit=crop',
+    img: 'src/assets/destination/Ella.webp',
     excerpt:
       'Majestic waterfalls, hidden caves, breathtaking vistas across the mountains: Ella is a...',
   },
   {
     title: 'Galle',
-    img: 'https://images.unsplash.com/photo-1597848212624-9410f5e5c0af?q=80&w=1600&auto=format&fit=crop',
+    img: 'src/assets/destination/Galle.webp',
     excerpt:
       'In this Southern capital natural and cultural diversity thrives, and history lives...',
   },
   {
     title: 'Habarana',
-    img: 'https://images.unsplash.com/photo-1603791452906-b15e9f3f9b59?q=80&w=1600&auto=format&fit=crop',
+    img: 'src/assets/destination/Habarana.jpg',
     excerpt:
       'Strategically placed on the primary route to the North and East of...',
   },
   {
     title: 'Hatton',
-    img: 'https://images.unsplash.com/photo-1502786129293-79981df4e689?q=80&w=1600&auto=format&fit=crop',
+    img: 'src/assets/destination/Hatton.jpg',
     excerpt:
       'The legacy of colonial plantations, traditions and lifestyles live on here, in...',
   },

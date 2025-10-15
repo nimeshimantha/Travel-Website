@@ -1,4 +1,6 @@
 import { Link } from 'react-router-dom'
+import { FaFacebookF, FaInstagram, FaLinkedinIn, FaYoutube } from 'react-icons/fa'
+import { FaXTwitter } from 'react-icons/fa6'
 
 function SocialIcon({ label, href, children }) {
   return (
@@ -21,7 +23,12 @@ export default function Footer() {
           <h3 className="text-2xl md:text-3xl font-semibold">
             Plan Your <span className="italic">Sri Lanka Holiday Tour</span> With Us
           </h3>
-          <Link to="/tours" className="btn-primary bg-white text-sky-700 hover:bg-slate-100">Find Tour Packages</Link>
+          <Link
+            to="/tours"
+            className="inline-flex items-center rounded-lg bg-white text-sky-700 font-semibold px-4 py-2 shadow hover:bg-slate-100"
+          >
+            Find Tour Packages
+          </Link>
         </div>
       </div>
 
@@ -36,10 +43,10 @@ export default function Footer() {
               tailored itineraries, ensuring you experience the island's best.
             </p>
             <div className="mt-6 grid grid-cols-2 gap-3">
-              <Link to="/"><img className="h-20 w-full object-cover rounded" src="https://images.unsplash.com/photo-1526779248011-028b3a8aa6a2?q=80&w=600&auto=format&fit=crop"/></Link>
-              <Link to="/"><img className="h-20 w-full object-cover rounded" src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=600&auto=format&fit=crop"/></Link>
-              <Link to="/"><img className="h-20 w-full object-cover rounded" src="https://images.unsplash.com/photo-1546182990-dffeafbe841d?q=80&w=600&auto=format&fit=crop"/></Link>
-              <Link to="/"><img className="h-20 w-full object-cover rounded" src="https://images.unsplash.com/photo-1519681393784-d120267933ba?q=80&w=600&auto=format&fit=crop"/></Link>
+              <Link to="/"><img className="h-20 w-full object-cover rounded" src="src\assets\footerimg\sigirya rock.png"/></Link>
+              <Link to="/"><img className="h-20 w-full object-cover rounded" src="src\assets\footerimg\yala.jpg"/></Link>
+              <Link to="/"><img className="h-20 w-full object-cover rounded" src="src\assets\footerimg\hikkaduwa.jpg"/></Link>
+              <Link to="/"><img className="h-20 w-full object-cover rounded" src="src\assets\footerimg\wildlifesl.jpg"/></Link>
             </div>
           </div>
 
@@ -83,20 +90,17 @@ export default function Footer() {
               Get in the social swing and connect with best travel agent in Sri Lanka to explore this beautiful island.
             </p>
             <div className="mt-5 flex flex-wrap gap-2">
-              <SocialIcon label="Instagram" href="#"><span>IG</span></SocialIcon>
-              <SocialIcon label="X" href="#"><span>X</span></SocialIcon>
-              <SocialIcon label="Facebook" href="#"><span>f</span></SocialIcon>
-              <SocialIcon label="LinkedIn" href="#"><span>in</span></SocialIcon>
-              <SocialIcon label="YouTube" href="#"><span>▶</span></SocialIcon>
-              <SocialIcon label="Pinterest" href="#"><span>P</span></SocialIcon>
-              <SocialIcon label="Tumblr" href="#"><span>t</span></SocialIcon>
-              <SocialIcon label="Vimeo" href="#"><span>V</span></SocialIcon>
+              <SocialIcon label="Facebook" href="#"><FaFacebookF /></SocialIcon>
+              <SocialIcon label="Instagram" href="#"><FaInstagram /></SocialIcon>
+              <SocialIcon label="X" href="#"><FaXTwitter /></SocialIcon>
+              <SocialIcon label="LinkedIn" href="#"><FaLinkedinIn /></SocialIcon>
+              <SocialIcon label="YouTube" href="#"><FaYoutube /></SocialIcon>
             </div>
           </div>
 
           {/* Column 4 */}
           <div>
-            <h4 className="text-lg font-semibold">Sri Lanka Tourism</h4>
+            <h4 className="text-lg font-semibold">Sri Lanka Travels</h4>
             <p className="mt-4 text-sm text-slate-400 max-w-xs">
               Sri Lanka is one of the leading romantic destinations in the whole world.
             </p>
@@ -117,13 +121,13 @@ export default function Footer() {
             </ul>
             <div className="mt-6 text-sm text-slate-400">
               <p>+94 777 483 111</p>
-              <p>info@srilankatravelandtourism.com</p>
+              <p>info@srilankatravels.com</p>
             </div>
           </div>
         </div>
 
         <div className="container border-t border-white/10 py-6 text-center text-sm text-slate-400">
-          © {new Date().getFullYear()} — Sri Lanka Travel and Tourism. All rights reserved.
+          © {new Date().getFullYear()} — Sri Lanka Travels. All rights reserved.
         </div>
       </div>
     </footer>

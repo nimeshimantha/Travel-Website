@@ -4,11 +4,11 @@ export default function IntroSection() {
   const scrollerRef = useRef(null)
   const scrollBy = (delta) => scrollerRef.current?.scrollBy({ left: delta, behavior: 'smooth' })
   const journeys = [
-    { title: 'Join a', subtitle: 'Group', img: 'https://images.unsplash.com/photo-1520201163981-8cc95007dd2a?q=80&w=800&auto=format&fit=crop' },
-    { title: 'Sri Lanka', subtitle: 'with private', img: 'https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?q=80&w=800&auto=format&fit=crop' },
-    { title: 'Authentic', subtitle: 'Ceylon', img: 'https://images.unsplash.com/photo-1524499982521-1ffd58dd89ea?q=80&w=800&auto=format&fit=crop' },
-    { title: 'Adventurous', subtitle: 'Spirit', img: 'https://images.unsplash.com/photo-1518655048521-f130df041f66?q=80&w=800&auto=format&fit=crop' },
-    { title: 'Barefoot', subtitle: 'Luxury', img: 'https://images.unsplash.com/photo-1559339352-11d035aa65de?q=80&w=800&auto=format&fit=crop' },
+    { title: 'Join a', subtitle: 'Group', img: 'src/assets/Intro/Group.webp' },
+    { title: 'Sri Lanka', subtitle: 'with Hotel', img: 'src/assets/Intro/Hotel.jpeg' },
+    { title: 'Authentic', subtitle: 'Ceylon', img: 'src/assets/Intro/Authentic.png' },
+    { title: 'Adventurous', subtitle: 'Spirit', img: 'src/assets/Intro/Adventure.jpg' },
+    { title: 'Barefoot', subtitle: 'Luxury', img: 'src/assets/Intro/Luxery1.jpg' },
   ]
   return (
     <section className="container py-16">
@@ -48,7 +48,7 @@ export default function IntroSection() {
       <div className="mt-10">
         <h2 className="section-title">Sri Lanka Travel and Tourism</h2>
         <p className="mt-4 max-w-4xl text-lg leading-8">
-          <a href="#" className="text-emerald-700 font-semibold">Sri Lanka Travel and Tourism</a> offers diverse experiences,
+          <a href="#" className="text-sky-700 font-semibold">Sri Lanka Travel and Tourism</a> offers diverse experiences,
           from exploring ancient ruins and lush tea plantations to enjoying pristine beaches and vibrant wildlife.
           Discover rich cultural heritage, scenic landscapes, and warm hospitality on your unforgettable journey.
         </p>
@@ -66,7 +66,7 @@ export default function IntroSection() {
       {/* Callouts row with illustration and buttons */}
       <div className="mt-16 grid gap-8 md:grid-cols-2 md:items-center">
         <div className="flex justify-center">
-          <img src="/travel-sketch.svg" alt="Travel sketch" className="max-w-md w-full" />
+          <img src="src/assets/Travel Sketch Map.jpg" alt="Travel sketch" className="max-w-md w-full" />
         </div>
         <div>
           <p className="text-lg leading-8 max-w-2xl">
@@ -83,7 +83,7 @@ export default function IntroSection() {
             <a className="btn-blue" href="#">Find a Hotel</a>
             <a className="btn-amber" href="#">Tour Package</a>
             <a className="btn-red" href="#">Car & Driver</a>
-            <a className="btn-green" href="#">Get a Quote</a>
+            <a className="btn-blue" href="#">Get a Quote</a>
           </div>
         </div>
       </div>

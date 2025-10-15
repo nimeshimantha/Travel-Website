@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { Link, NavLink } from 'react-router-dom'
+import logo from '../assets/logo.png'
 
 const navItems = [
   { to: '/', label: 'Home' },
@@ -16,7 +17,7 @@ export default function Navbar() {
     <header className="fixed inset-x-0 top-0 z-50 bg-white text-slate-900 shadow-sm">
       <nav className="container flex items-center justify-between py-4">
         <Link to="/" className="flex items-center gap-2 font-semibold tracking-wide">
-          <span className="inline-block h-8 w-8 rounded bg-emerald-500"></span>
+          <img src={logo} alt="Logo" className="h-9 w-9 object-contain" />
           <span>Sri Lanka Travels</span>
         </Link>
 
@@ -36,7 +37,7 @@ export default function Navbar() {
               <NavLink
                 to={item.to}
                 className={({ isActive }) =>
-                  `hover:text-emerald-600 transition ${isActive ? 'text-emerald-600' : ''}`
+                  `hover:text-sky-600 transition ${isActive ? 'text-sky-600' : ''}`
                 }
                 onClick={() => setOpen(false)}
               >
@@ -55,7 +56,7 @@ export default function Navbar() {
                 <NavLink
                   to={item.to}
                   className={({ isActive }) =>
-                    `block py-1 hover:text-emerald-600 ${isActive ? 'text-emerald-600' : ''}`
+                    `block py-1 hover:text-sky-600 ${isActive ? 'text-sky-600' : ''}`
                   }
                   onClick={() => setOpen(false)}
                 >

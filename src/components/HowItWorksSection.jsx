@@ -1,3 +1,4 @@
+import circleImg from "../assets/Travel and Tuorism.jpg";
 function Step({ title, text }) {
   return (
     <div className="space-y-2">
@@ -30,15 +31,13 @@ export default function HowItWorksSection() {
     <section className="container py-20">
       <h2 className="text-center text-3xl md:text-4xl font-serif font-semibold">How Sri Lanka Travel & Tourism Holiday Package Planning Works?</h2>
       <div className="mt-10 grid gap-10 md:grid-cols-2 md:items-center">
-        {/* Left: circular graphic */}
-        <div className="relative mx-auto max-w-md">
-          <div className="aspect-square w-full rounded-full bg-slate-300 grid place-items-center text-slate-600 text-2xl font-semibold">
-            SRI LANKA
-          </div>
-          <svg className="absolute inset-0 pointer-events-none" viewBox="0 0 100 100">
-            <path d="M10,50 C10,20 90,20 90,50" stroke="#f2b705" strokeWidth="2" fill="none" />
-            <path d="M10,50 C10,80 90,80 90,50" stroke="#f2b705" strokeWidth="2" fill="none" />
-          </svg>
+        {/* Left: landscape image */}
+        <div className="relative mx-auto max-w-xl">
+          <img
+            src={circleImg}
+            alt="Sri Lanka scenery"
+            className="w-full rounded-2xl object-cover shadow-lg"
+          />
         </div>
 
         {/* Right: steps */}

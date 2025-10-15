@@ -19,7 +19,7 @@ export default function AboutUsSection() {
           </p>
           <p className="mt-6 text-lg leading-8">
             Sri Lanka has been voted the Most Desirable Island in the World at the
-            <a className="text-emerald-700 font-semibold"> Wanderlust Reader Travel Awards 2024</a> in the UK. Considered one of the most thrilling
+            <a className="text-sky-700 font-semibold"> Wanderlust Reader Travel Awards 2024</a> in the UK. Considered one of the most thrilling
             turnarounds, Sri Lanka has risen from eighth place last year to claim the Gold award reaffirming the island’s captivating
             appeal and diverse offerings, as recognized by over 200,000 passionate travelers who voted for their favorite destinations.
           </p>

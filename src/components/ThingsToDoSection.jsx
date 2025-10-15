@@ -30,7 +30,7 @@ export default function ThingsToDoSection() {
         {/* Center: Map with markers */}
         <div className="relative mx-auto w-full max-w-lg">
           <img
-            src="https://images.unsplash.com/photo-1549880338-65ddcdfd017b?q=80&w=900&auto=format&fit=crop"
+            src="src/assets/sri-lanka-provinces-and-capital-map.jpg"
             alt="Sri Lanka map"
             className="w-full rounded-2xl shadow-lg"
           />
@@ -50,16 +50,15 @@ export default function ThingsToDoSection() {
         {/* Right: Feature card */}
         <article className="rounded-2xl overflow-hidden bg-white shadow-[0_10px_30px_rgba(0,0,0,.08)]">
           <img
-            src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1200&auto=format&fit=crop"
-            alt="Beach dinner"
+            src="src\assets\471485-Kandy-Sri-Lanka.webp"
+            alt="Dalada Maligawa"
             className="h-72 w-full object-cover"
           />
           <div className="p-6">
-            <h3 className="text-2xl font-extrabold">Best ideas for a date …</h3>
-            <p className="mt-1 text-xs uppercase tracking-wide text-slate-500">Best ideas for a date night in Sri Lanka</p>
+            <h3 className="text-2xl font-extrabold">Dalada Maligawa</h3>
+            <p className="mt-1 text-xs uppercase tracking-wide text-slate-500">The Temple of the Sacred Tooth Relic</p>
             <p className="mt-4 text-slate-700 leading-7 line-clamp-3">
-              There are many ways to celebrate your love in an island like Sri Lanka, from candle-lit beach dinners to
-              scenic train rides and misty mountain hideaways…
+              Located in Kandy, Sri Lanka, it is the highly revered Buddhist temple that houses the sacred tooth relic of Lord Buddha.
             </p>
             <a href="#" className="mt-4 inline-flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 hover:bg-slate-100">→</a>
           </div>
