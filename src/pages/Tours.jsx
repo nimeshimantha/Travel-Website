@@ -1,8 +1,20 @@
+import { Link } from 'react-router-dom'
 import heroImg from "../assets/ourland/sigirya.jpg";
 
 export default function Tours() {
   return (
     <main className="container py-10 md:py-16">
+
+      <section className="container py-16">
+      <p className="text-center text-sm text-pink-600">• Go where your passion takes you</p>
+      <h1 className="mt-2 text-center text-4xl md:text-5xl font-serif font-semibold">Find your journey</h1>
+      <p className="text-center text-2xl font-serif">Adventure Meets Luxury in Every Destination</p>
+      <p className="mx-auto mt-8 max-w-5xl text-center text-lg leading-8 text-slate-700">
+        Exotic locations, wild adventures, romantic escapes, or off the beaten track: which path will you choose to explore our paradise isle?
+        We offer you many to pick from. And, as there is much to see and do in Sri Lanka, tours to suit your specific interests and duration of stay can be tailor-made too.
+      </p>
+    </section>
+
       <section className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-10 items-center">
         {/* Left image */}
         <div className="order-2 lg:order-1">
@@ -38,12 +50,12 @@ export default function Tours() {
           </div>
 
           <div className="mt-6">
-            <a href="#contact" className="btn-red rounded-full px-5 py-2.5 text-sm md:text-base">
+            <Link to="/plantrip" className="btn-red rounded-full px-5 py-2.5 text-sm md:text-base">
               PLAN YOUR TRIP TO SRI LANKA 
               <span className="ml-2" aria-hidden>
                 →
               </span>
-            </a>
+            </Link>
           </div>
         </div>
       </section>

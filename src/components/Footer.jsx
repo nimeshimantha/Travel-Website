@@ -24,7 +24,7 @@ export default function Footer() {
             Plan Your <span className="italic">Sri Lanka Holiday Tour</span> With Us
           </h3>
           <Link
-            to="/tours"
+            to="/tuorpackages"
             className="inline-flex items-center rounded-lg bg-white text-sky-700 font-semibold px-4 py-2 shadow hover:bg-slate-100"
           >
             Find Tour Packages

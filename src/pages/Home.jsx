@@ -19,7 +19,7 @@ export default function Home() {
       <TourPackagesSection />
       <TravelStoriesSection />
       <OurIslandSection />
-  <HowItWorksSection />
+      <HowItWorksSection />
       <ThingsToDoSection />
       <WhyTravelSection />
     </main>

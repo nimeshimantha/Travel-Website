@@ -3,11 +3,11 @@ import { Link, NavLink } from 'react-router-dom'
 import logo from '../assets/logo.png'
 
 const navItems = [
-  { to: '/', label: 'Home' },
-  { to: '/destinations', label: 'Destinations' },
-  { to: '/experiences', label: 'Experiences' },
-  { to: '/tours', label: 'Tours' },
-  { to: '/contact', label: 'Contact' },
+  { to: '/', label: 'HOME' },
+  { to: '/destinations', label: 'DESTINATIONS' },
+  { to: '/experiences', label: 'EXPERIENCES' },
+  { to: '/tours', label: 'TOURS' },
+  { to: '/contact', label: 'CONTACT US' },
 ]
 
 export default function Navbar() {

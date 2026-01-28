@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import heroImg from '../assets/Hero Image.webp'
 
 export default function Hero() {
@@ -17,8 +18,8 @@ export default function Hero() {
             Your Home, Your Journey, Your Hospitality Haven
           </p>
           <div className="mt-8 flex gap-4">
-            <a href="#destinations" className="btn-blue">See destinations</a>
-            <a href="#tours" className="btn-secondary">View tours</a>
+            <Link to="/destinations" className="btn-blue">See destinations</Link>
+            <Link to="/tours" className="btn-secondary">View tours</Link>
           </div>
         </div>
       </div>
