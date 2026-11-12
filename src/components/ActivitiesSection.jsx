@@ -38,9 +38,9 @@ export default function ActivitiesSection() {
     <section className="container py-16">
       <h2 className="section-title">Best Activities to do in Sri Lanka</h2>
       <p className="mt-4 max-w-4xl text-lg leading-8">
-  Discover the best activities in Sri Lanka, including exploring ancient temples, climb
-  <a className="text-sky-700 font-semibold"> Sigiriya Lions Rock</a>, enjoying wildlife safaris in Yala, Udawalawa and
-  <a className="text-sky-700 font-semibold"> Minneriya national park</a>, surfing in Arugam Bay, hiking in the Central Highlands,
+        Discover the best activities in Sri Lanka, including exploring ancient temples, climb
+        <a className="text-sky-700 font-semibold"> Sigiriya Lions Rock</a>, enjoying wildlife safaris in Yala, Udawalawa and
+        <a className="text-sky-700 font-semibold"> Minneriya national park</a>, surfing in Arugam Bay, hiking in the Central Highlands,
         and relaxing on pristine beaches like Unawatuna and Mirissa.
       </p>
 
